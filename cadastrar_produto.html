@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Mercados</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Gestão de Mercados</h1>
+
+    <div id="alert" class="alert"></div>
+
+    <section>
+        <h2>Cadastrar Produto</h2>
+        <form id="formProduto">
+            <input type="number" id="idProduto" placeholder="ID do Produto" required>
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto" required>
+            <input type="text" id="descricaoProduto" placeholder="Descrição do Produto" required>
+            <input type="number" id="precoProduto" placeholder="Preço do Produto" required>
+            <input type="number" id="quantidadeProduto" placeholder="Quantidade" required>
+            <input type="number" id="mercadoRef" placeholder="ID do Mercado" required>
+            <button type="submit" class="botao-verde">Cadastrar Produto</button>
+        </form>
+        <form action="produtos.html">
+            <button type="submit" class="botao-azul">Produtos já cadastrados</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

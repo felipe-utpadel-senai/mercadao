@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8db6dd;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.botao-verde {
+    padding: 10px;
+    border: none;
+    background-color: #70b86a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 14px;
+}
+.botao-azul {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Ocultar inicialmente */
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #70b86a;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.info-button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info-button:hover {
+    background-color: #0056b3;
+}
+.add-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #70b86a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+}
+.add-button:hover {
+    background-color: #218838;
+}
+
+tbody {
+    background-color: white;
+}
+
+.update-button {
+    padding: 5px 10px;
+    background-color:  #70b86a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: #df5d4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

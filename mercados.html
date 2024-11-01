@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Mercados</title>
+    <link rel="stylesheet" href="index.css">
+    <a href="index.html">Voltar</a>
+</head>
+<body>
+
+    <h1>Lista de Mercados Cadastrados</h1>
+
+    <a href="index.html" class="add-button">Cadastrar Novo Mercado</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome do Mercado</th>
+                <th>Endereço</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>1</td>
+                <td>Mercado Central</td>
+                <td>Avenida Brasil, 123</td>
+                <td><button class="info-button" onclick="window.location.href='produtos.html'">Produtos</button>
+                    <button class="update-button" onclick="window.location.href='index.html'">Atualizar</button>
+                    <button class="delete-button" onclick="confirmDelete(1)">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Supermercado Verde</td>
+                <td>Rua das Flores, 456</td>
+                <td><button class="info-button" onclick="window.location.href='produtos.html'">Produtos</button>
+                    <button class="update-button" onclick="window.location.href='index.html'">Atualizar</button>
+                    <button class="delete-button" onclick="confirmDelete(2)">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Atacadão do Bairro</td>
+                <td>Praça da Liberdade, 789</td>
+                <td><button class="info-button" onclick="window.location.href='produtos.html'">Produtos</button>
+                    <button class="update-button" onclick="window.location.href='index.html'">Atualizar</button>
+                    <button class="delete-button" onclick="confirmDelete(3)">Deletar</button>
+                </td>
+            </tr>
+            <!-- Adicione mais mercados conforme necessário -->
+        </tbody>
+    </table>
+    <script>
+        function confirmDelete(mercadoId) {
+            const confirmation = confirm("Tem certeza que deseja deletar este mercado?");
+            if (confirmation) {
+                // Aqui você pode adicionar a lógica para deletar o produto, como redirecionar para uma página de deleção ou chamar uma API.
+                alert("Mercado " + mercadoId + " deletado.");
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

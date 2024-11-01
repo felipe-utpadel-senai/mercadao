@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos do Mercado Central</title>
+    <link rel="stylesheet" href="index.css">
+    <a href="mercados.html">Voltar</a>
+</head>
+<body>
+
+    <h1>Produtos do Mercado Central</h1>
+
+    <a href="cadastrar_produto.html" class="add-button">Cadastrar Novo Produto</a>
+
+    <table>
+        <thead>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>ID do Mercado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Arroz</td>
+                    <td>Arroz tipo 1, pacote de 5kg</td>
+                    <td>50</td>
+                    <td>R$ 20,00</td>
+                    <td>1</td>
+                    <td>
+                        <button class="update-button" onclick="window.location.href='cadastrar_produto.html'">Atualizar</button>
+                        <button class="delete-button" onclick="confirmDelete(1)">Deletar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Feijão</td>
+                    <td>Feijão carioca, pacote de 1kg</td>
+                    <td>30</td>
+                    <td>R$ 8,00</td>
+                    <td>1</td>
+                    <td>
+                        <button class="update-button" onclick="window.location.href='cadastrar_produto.html'">Atualizar</button>
+                        <button class="delete-button" onclick="confirmDelete(2)">Deletar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Macarrão</td>
+                    <td>Macarrão espaguete, pacote de 500g</td>
+                    <td>20</td>
+                    <td>R$ 5,00</td>
+                    <td>1</td>
+                    <td>
+                        <button class="update-button" onclick="window.location.href='cadastrar_produto.html'">Atualizar</button>
+                        <button class="delete-button" onclick="confirmDelete(3)">Deletar</button>
+                    </td>
+                </tr>
+            <!-- Adicione mais produtos conforme necessário -->
+        </tbody>
+    </table>
+
+    <script>
+        function confirmDelete(produtoId) {
+            const confirmation = confirm("Tem certeza que deseja deletar este produto?");
+            if (confirmation) {
+                // Aqui você pode adicionar a lógica para deletar o produto, como redirecionar para uma página de deleção ou chamar uma API.
+                alert("Produto " + produtoId + " deletado.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Mercados</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Gestão de Mercados</h1>
+
+    <div id="alert" class="alert"></div>
+
+    <section>
+        <h2>Cadastrar Mercado</h2>
+        <form id="formMercado">
+            <input type="number" id="idMercado" placeholder="ID do Mercado" required>
+            <input type="text" id="nomeMercado" placeholder="Nome do Mercado" required>
+            <input type="text" id="enderecoMercado" placeholder="Endereço do Mercado" required>
+            <button type="submit" class="botao-verde">Cadastrar Mercado</button>
+        </form>
+        <form action="mercados.html">
+            <button type="submit" class="botao-azul">Mercados já cadastrados</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
